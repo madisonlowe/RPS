@@ -10,7 +10,7 @@
   <body>
     <div class="container">
     <h1 alt="Rock, Paper, Scissors">🪨 🗞️ ✂️</h1>
-    <h2 id="welcome-username">Welcome <input type="text" id="username-input" maxLength="10"></input> !</h2>
+    <h2 id="welcome-username">Welcome <input type="text" id="username-input" maxLength="10" size="20"></input> !</h2>
     <div class="buttons">
       <button id="rock-button" class="button"><strong>ROCK</strong></button>
       <button id="paper-button" class="button"><strong>PAPER</strong></button>
@@ -20,13 +20,14 @@
     <div class="moves-and-stats">
       <p class="block-one">Your move</p>
       <p class="block-two">Computer move</p>
-      <p id="your-move">&nbsp;</p>
-      <p id="computer-move">&nbsp;</p>
+      <p id="your-move">...</p>
+      <p id="computer-move">...</p>
       <p id="games">Games: 0</p>
       <p id="wins">Wins: 0</p>
       <p id="losses">Losses: 0</p>
       <p id="draws">Draws: 0</p>
     </div>
+    <input type="checkbox" id="dark-mode-btn"></input>
     <script src="main.js"></script>
   </body>
 </html>

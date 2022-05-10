@@ -172,3 +172,20 @@ function setUsername() {
     return false;
   }
 }
+
+// DARK MODE BUTTON CODE.
+let darkModeBtn = document.querySelector("#dark-mode-btn");
+darkModeBtn.addEventListener("click", darkMode);
+
+let h1 = document.querySelector("h1");
+
+function darkMode() {
+  let body = document.body;
+  if (darkModeBtn.checked) {
+    body.classList.toggle("dark-mode");
+    h1.textContent = "✨ 🌝 💫";
+  } else {
+    body.classList.remove("dark-mode");
+    h1.textContent = "🪨 🗞️ ✂️";
+  }
+}

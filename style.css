@@ -1,16 +1,29 @@
+:root {
+  --main-accent: #ff5454;
+  --font: #161616;
+  --bg: #ffffff;
+}
+
+.dark-mode {
+  --main-accent: #f1d00a;
+  --font: #f0f0f0;
+  --bg: #21325e;
+}
+
 #username-input {
   border: 0;
   outline: 0;
   background: transparent;
-  border-bottom: 2px solid #ff5454;
+  border-bottom: 2px solid var(--main-accent);
   font-size: 15px;
-  color: grey;
+  color: var(--font);
   font-style: italic;
 }
 
 #your-move {
   grid-column: 1 / span 2;
-  grid-row: 2 / 3;
+  grid-row: 1 / 2;
+  color: var(--font);
   font-family: "Rubik Mono One", sans-serif;
   font-size: 105%;
   place-self: center;
@@ -18,7 +31,8 @@
 
 #computer-move {
   grid-column: 3 / span 2;
-  grid-row: 2 / 3;
+  grid-row: 1 / 2;
+  color: var(--font);
   font-family: "Rubik Mono One", sans-serif;
   font-size: 105%;
   place-self: center;
@@ -30,7 +44,7 @@
   place-self: center;
   font-size: x-small;
   font-family: "Rubik Mono One", sans-serif;
-  color: grey;
+  color: var(--font);
 }
 
 #wins {
@@ -39,7 +53,7 @@
   place-self: center;
   font-size: x-small;
   font-family: "Rubik Mono One", sans-serif;
-  color: grey;
+  color: var(--font);
 }
 
 #losses {
@@ -48,7 +62,7 @@
   place-self: center;
   font-size: x-small;
   font-family: "Rubik Mono One", sans-serif;
-  color: grey;
+  color: var(--font);
 }
 
 #draws {
@@ -57,21 +71,30 @@
   place-self: center;
   font-size: x-small;
   font-family: "Rubik Mono One", sans-serif;
-  color: grey;
+  color: var(--font);
+}
+
+#dark-mode-btn {
+  /* ADD CODE HERE */
+}
+
+#dark-mode-btn input {
+  /* ADD CODE HERE, HIDE OG CHECKBOX */
 }
 
 .buttons {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 2rem;
+  padding: 1rem;
 }
 
 .button {
   flex: 1;
   margin: 10px;
-  padding: 1.2rem 0;
-  background: #ff6666;
-  border: 1px solid #ff6666;
+  padding: 1.5rem 0;
+  background: var(--main-accent);
+  border: 1px solid var(--main-accent);
+  color: var(--font);
   border-radius: 10px;
   align-items: stretch;
   letter-spacing: 0.5px;
@@ -81,8 +104,9 @@
 }
 
 .button:hover {
-  background: #ff3e3e;
-  border: 1px solid #ff3e3e;
+  background: var(--font);
+  border: 1px solid var(--font);
+  color: var(--main-accent);
   cursor: pointer;
 }
 
@@ -91,11 +115,10 @@
   justify-self: center;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 5px;
 }
 
 .container {
-  border: 5px solid #ff5454;
+  border: 5px solid var(--main-accent);
   border-radius: 10px;
   margin: 0 auto;
   margin-top: 5vh;
@@ -106,8 +129,8 @@
 }
 .block-one {
   grid-column: 1 / span 2;
-  grid-row: 1 / 2;
-  color: grey;
+  grid-row: 2 / 3;
+  color: var(--font);
   font-style: italic;
   font-family: "Rubik Mono One", sans-serif;
   font-size: smaller;
@@ -116,8 +139,8 @@
 
 .block-two {
   grid-column: 3 / span 2;
-  grid-row: 1 / 2;
-  color: grey;
+  grid-row: 2 / 3;
+  color: var(--font);
   font-style: italic;
   font-family: "Rubik Mono One", sans-serif;
   font-size: smaller;
@@ -127,6 +150,8 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--font);
+  background: var(--bg);
 }
 
 h1 {
