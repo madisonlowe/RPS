@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title alt="Rock, Paper, Scissors Game!">🪨 🗞️ ✂️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+    <h1 alt="Rock, Paper, Scissors">🪨 🗞️ ✂️</h1>
+    <h2 id="welcome-username">Welcome <input type="text" id="username-input" maxLength="10"></input> !</h2>
+    <div class="buttons">
+      <button id="rock-button" class="button"><strong>ROCK</strong></button>
+      <button id="paper-button" class="button"><strong>PAPER</strong></button>
+      <button id="scissors-button" class="button"><strong>SCISSORS</strong></button>
+    </div>
+    <br />
+    <div class="moves-and-stats">
+      <p class="block-one">Your move</p>
+      <p class="block-two">Computer move</p>
+      <p id="your-move">&nbsp;</p>
+      <p id="computer-move">&nbsp;</p>
+      <p id="games">Games: 0</p>
+      <p id="wins">Wins: 0</p>
+      <p id="losses">Losses: 0</p>
+      <p id="draws">Draws: 0</p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
