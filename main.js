@@ -181,11 +181,11 @@ let h1 = document.querySelector("h1");
 
 function darkMode() {
   let body = document.body;
-  if (darkModeBtn.checked) {
-    body.classList.toggle("dark-mode");
-    h1.textContent = "✨ 🌝 💫";
-  } else {
+  if (body.classList.contains("dark-mode")) {
     body.classList.remove("dark-mode");
     h1.textContent = "🪨 🗞️ ✂️";
+  } else {
+    body.classList.toggle("dark-mode");
+    h1.textContent = "✨ 🌝 💫";
   }
 }

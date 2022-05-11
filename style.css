@@ -5,9 +5,9 @@
 }
 
 .dark-mode {
-  --main-accent: #f1d00a;
+  --main-accent: #e6bb00;
   --font: #f0f0f0;
-  --bg: #21325e;
+  --bg: #183059;
 }
 
 #username-input {
@@ -75,11 +75,10 @@
 }
 
 #dark-mode-btn {
-  /* ADD CODE HERE */
-}
-
-#dark-mode-btn input {
-  /* ADD CODE HERE, HIDE OG CHECKBOX */
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
 }
 
 .buttons {
