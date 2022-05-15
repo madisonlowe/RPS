@@ -3,6 +3,7 @@
 - let it be a fade-in-fade-out text box which resets the game on being edited?
 - asks user if they want to reset the score, or if they're a new player, on changing the name?
 - refactor input bar so that code accounts for no text entered and doesn't send up alert.
+- check lighthouse report and action further improvements.
 */
 
 let score = {
