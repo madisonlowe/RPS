@@ -79,7 +79,7 @@
   height: 1.5rem;
   width: 1.5rem;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: var(--main-accent);
 }
 
 .buttons {
@@ -121,7 +121,7 @@
   border: 5px solid var(--main-accent);
   border-radius: 10px;
   margin: 0 auto;
-  margin-top: 5vh;
+  margin-top: 10vh;
   width: 450px;
   height: 450px;
   padding: 5rem;

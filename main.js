@@ -1,11 +1,3 @@
-/* 
-- REFACTOR IDEAS
-- let it be a fade-in-fade-out text box which resets the game on being edited?
-- asks user if they want to reset the score, or if they're a new player, on changing the name?
-- refactor input bar so that code accounts for no text entered and doesn't send up alert.
-- check lighthouse report and action further improvements.
-*/
-
 let score = {
   gamesPlayed: 0,
   wins: 0,
@@ -13,7 +5,6 @@ let score = {
   losses: 0,
 };
 
-// Selectors for the HTML DOM manipulation.
 let rockButton = document.querySelector("#rock-button");
 rockButton.addEventListener("click", playerRock);
 let paperButton = document.querySelector("#paper-button");
@@ -32,7 +23,6 @@ let welcomeUsername = document.querySelector("#welcome-username");
 let yourMoveDisplay = document.querySelector("#your-move");
 let computerMoveDisplay = document.querySelector("#computer-move");
 
-// Functions for the game.
 function playerRock() {
   yourMoveDisplay.textContent = "Rock!";
   let computerMove = getComputerMove();
@@ -139,7 +129,6 @@ function setUsername() {
   }
 }
 
-// DARK MODE BUTTON CODE.
 let darkModeBtn = document.querySelector("#dark-mode-btn");
 darkModeBtn.addEventListener("click", darkMode);
 
